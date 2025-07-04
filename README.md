@@ -1,12 +1,83 @@
 # mysql-questions
 
-![mysql1](https://github.com/user-attachments/assets/ea65c48d-cabf-46b2-814b-dec556c89753)
 
-![mysql2](https://github.com/user-attachments/assets/2ed70fbc-813c-4b35-9f5b-754dded82661)
+Problem Statement
+You are given two tables: Sales and Employees.
 
-![mysql3](https://github.com/user-attachments/assets/43ddb4fa-ec2c-424e-a7f8-811721e402b0)
+The Sales table records the details of each sale made by employees, including the following columns:
+
+sale_id
+
+employee_id
+
+sale_amount
+
+The Employees table holds information about the employees, including the following columns:
+
+employee_id
+
+first_name
+
+last_name
+
+Task
+Write a query to find the following:
+
+The average sales amount for each employee, along with the number of sales they made.
+
+
+
+Expected Output Columns
+The query must return the following columns:
+
+employee_id
+
+first_name
+
+last_name
+
+average_sale
+
+total_sales_count
+
+Sorting Requirements
+The result should be ordered in descending order of average_sale.
+
+If two or more employees have the same average sale, then sort them in ascending order of employee_id.
+
+Input Format
+Employees Table
+Column Name	Data Type
+employee_id	INTEGER
+first_name	VARCHAR(255)
+last_name	VARCHAR(255)
+
+Sales Table
+Column Name	Data Type
+sale_id	INTEGER
+employee_id	INTEGER
+sale_amount	DECIMAL(10,2)
+
+Output Format
+Column Name	Data Type
+employee_id	INTEGER
+first_name	VARCHAR(255)
+last_name	VARCHAR(255)
+average_sale	DECIMAL(10,6)
+total_sales_count
+
+
+
+
+
+
+
 
 //  code  ---------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 
 
 SELECT 
